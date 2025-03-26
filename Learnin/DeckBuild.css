@@ -1,0 +1,73 @@
+body {
+    background-image: url('Images/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat; /* Repeat the background when scrolling */
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+}
+.button:hover {
+    background-color: #4a525a;
+}
+
+.header2 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 0px;
+}

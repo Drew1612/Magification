@@ -1,0 +1,170 @@
+body {
+    background-image: url('Images/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat; /* Repeat the background when scrolling */
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* Header Styles */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #4a525a;
+}
+
+.header2 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Footer Styles */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Search Bar */
+.search-wrapper {
+    position: absolute;
+    top: 30%; /* Adjusted to position the search bar closer to the center */
+    left: 50%;
+    transform: translate(-50%, -30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.search-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4a525a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-container button:hover {
+    background-color: #666;
+}
+
+/* Card Display Section (below the search bar) */
+.card-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    justify-items: center;
+    margin-top: 350px; /* Space between search bar and cards */
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-box {
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.card-image {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Dynamically display a black background at the bottom */
+.bottom-background {
+    background-color: black;
+    width: 100%;
+    height: 0;  /* Starts at 0 height */
+    transition: height 0.3s ease-in-out;
+}
+
+/* Add the class that triggers the black background to appear when content overflows */
+.page-has-content {
+    min-height: 100%;
+    position: relative;
+}
+
+.page-has-content .bottom-background {
+    height: 100px; /* You can adjust the height to fit the content */
+}
