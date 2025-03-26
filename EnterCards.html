@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Cards</title>
+    <link rel="stylesheet" href="EnterCards.css">
+</head>
+<body>
+    <div class="header2">
+        <div class="header-content" onclick="location.href='index.html'">
+            <img src="Images/logo.jpg" alt="Logo" class="logo" onclick="location.href='index.html'">
+            <h2>Magification</h2>
+        </div>
+        <div class="header-container">
+            <button class="button" onclick="location.href='Collection.html'">Collection</button>
+            <button class="button" onclick="location.href='DeckBuild.html'">Decks</button>
+            <button class="button" onclick="location.href='EnterCards.html'">Enter Cards</button>
+        </div>
+    </div>
+
+    <div class="search-wrapper">
+        <button class="button" onclick="saveToCollection()">Save to Collection</button> <!-- Save button -->
+        <input type="text" id="cardSearch" placeholder="Search for a card...">
+        <button onclick="searchCard()">Search</button>
+        <button onclick="openMTGOPopup()">Import from MTGO</button>
+        <div id="totalCardsCount" class="card-count">Total Cards: 0</div> <!-- Card count display -->
+    </div>
+
+    <div id="cardList" class="card-list"></div>
+
+    <!-- Import MTGO Popup -->
+    <div id="mtgoPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeMTGOPopup()">&times;</span>
+            <h3>Import Cards from MTGO</h3>
+            <textarea id="mtgoInput" placeholder="Paste your MTGO card list here..."></textarea>
+            <button onclick="importMTGOCards()">Enter to List</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Molloy Website</p>
+    </div>
+
+    <script src="EnterCards.js"></script>
+</body>
+</html>

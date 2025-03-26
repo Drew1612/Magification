@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection</title>
+    <link rel="stylesheet" href="Collection.css">
+</head>
+<body>
+    
+    <div class="body">
+        <!-- Player Stats Section -->
+        <div class="header2">
+            <div class="header-content" onclick="location.href='index.html'">
+                <img src="Images/logo.jpg" alt="Logo" class="logo" onclick="location.href='index.html'">
+                <h2>Magification</h2>
+            </div>
+            <div class="header-container">
+                <button class="button" onclick="location.href='Collection.html'">Collection</button>
+                <button class="button" onclick="location.href='DeckBuild.html'">Decks</button>
+                <button class="button" onclick="location.href='EnterCards.html'">Enter Cards</button>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar-container">
+            <input type="text" id="collectionSearch" placeholder="Search your collection..." oninput="searchCollection()">
+        </div>
+
+        <!-- Display the card list -->
+        <div id="cardList" class="card-list"></div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>Molloy Website</p>
+    </div>
+
+    <script src="Collection.js"></script>
+</body>
+</html>
